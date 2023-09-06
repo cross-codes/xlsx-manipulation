@@ -1,4 +1,3 @@
-// Package helpers stores functions to open and choose content from the spreadsheet and more
 package helpers
 
 import (
@@ -9,7 +8,7 @@ import (
 
 var rbData []string
 
-var students []Student
+var students []student
 
 var departmentMap = map[string]string{
 	"A1": "Chemical",
@@ -28,8 +27,7 @@ var departmentMap = map[string]string{
 	"B5": "Physics",
 }
 
-// Student describes all atrributes associated with a student
-type Student struct {
+type student struct {
 	Name       string
 	ID         string
 	Email      string
@@ -172,7 +170,7 @@ func readNewSheet(fileName string, sheetName string) {
 func createStudentStructs() {
 	for i := 4; i < len(rbData); i += 4 {
 		if i%4 == 0 {
-			s := Student{
+			s := student{
 				Name:       rbData[i],
 				ID:         rbData[i+1],
 				Email:      rbData[i+2],
