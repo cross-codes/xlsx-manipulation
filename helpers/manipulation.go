@@ -23,7 +23,7 @@ var departmentMap = map[string]string{
 	"B1": "Biology",
 	"B2": "Chemistry",
 	"B3": "Economics",
-	"B4": "Chemistry",
+	"B4": "Mathematics",
 	"B5": "Physics",
 }
 
