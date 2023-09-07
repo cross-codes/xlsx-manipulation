@@ -66,7 +66,6 @@ func CreateNewXLSX(fileName string, sheetName string) {
 }
 
 func retParams(fullid string) (string, string, string, string, string) {
-
 	year := fullid[:4]
 	stream := fullid[4:6]
 	id := fullid[8:12]
